@@ -1,10 +1,10 @@
 if (!HTMLFormElement.prototype.requestSubmit) {
     HTMLFormElement.prototype.requestSubmit = function() {
-        const submitter = document.createElement('input');
-        submitter.type = 'submit';
-        submitter.hidden = true;
-        this.appendChild(submitter);
-        submitter.click();
-        this.removeChild(submitter);
+        const submitBtn = document.createElement('input');
+        submitBtn.type = 'submit';
+        submitBtn.hidden = true;
+        this.appendChild(submitBtn);
+        submitBtn.click();
+        this.removeChild(submitBtn);
     };
 }
