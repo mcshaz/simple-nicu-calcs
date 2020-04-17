@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>NW Newborn Clinical Guideline - Gestational Age Calculator</title>
+    <link rel="stylesheet" href="../guidelinestyle.css" type="text/css" media="all">
+    <link rel="stylesheet" href="src/main.css" type="text/css" media="all">
+    <style>
+        .lmp {
+            color:darkgreen;
+        }
+        .edd {
+            color:darkmagenta;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form>
+            <table border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr>
+                        <td align="right"><label for="lmpDate" class="lmp">First day of LMP</label></td>
+                        <td><input type="date" name="lmpDate" id="lmpDate" class="lmp"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="scanEdd" class="edd">EDD by scan or dates</label></td>
+                        <td><input type="date" name="scanEdd" id="scanEdd" class="edd"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="targetDate">Calculate the gestation as of</label></td>
+                        <td><input type="date" name="targetDate" id="targetDate" required>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <button type="reset">Reset</button>
+            <div class="output-container lmp hidden">The EDD from the LMP is <output id="eddByLmp"></output>
+            </div>
+            <div class="output-container lmp hidden">The gest age based on the LMP is <output id="lmpCgaWeeks"></output> weeks
+                <sup>+<output id="lmpCgaDays"></output> day(s)</sup>
+            </div>
+            <div class="output-container edd hidden">The GA based on the presumed EDD is <output id="eddCgaWeeks"></output>
+                weeks <sup>+<output id="eddCgaDays"></output> day(s)</sup>
+            </div>
+        </form>
+    </center>
+    <script src="../../GuidelineScript.js" type="text/javascript"></script>
+    <script nomodule src="dist/gest-age.nomodule.js"></script>
+    <script type="module" src="dist/gest-age.module.js"></script>
+</body>
+
+</html>

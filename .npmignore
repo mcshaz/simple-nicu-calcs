@@ -1,0 +1,9 @@
+## ignore the dependency modules directory
+node_modules
+src
+examples
+docs
+index.html
+rollup.config.js
+.eslintignore
+.eslintrc.js

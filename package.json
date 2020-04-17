@@ -1,0 +1,47 @@
+{
+  "name": "simple-nicu-calcs",
+  "version": "0.0.1",
+  "deprecated": false,
+  "description": "Simple NICU calculators",
+  "scripts": {
+    "start": "rollup -c -w & httpster -p 8080",
+    "start-c9": "rollup -c -w & httpster -p $PORT",
+    "build": "rollup -c",
+    "serve": "httpster -p 8080",
+    "lint": "eslint src/*.{js,mjs} --fix"
+  },
+  "contributors": [
+    "Brent McSharry <brent@focused-light.net>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mcshaz/simple-nicu-calcs.git"
+  },
+  "bugs": "https://github.com/mcshaz/simple-nicu-calcs/issues",
+  "homepage": "git://github.com/mcshaz/simple-nicu-calcs#readme",
+  "keywords": [
+    "nicu",
+    "calculators",
+    "lmp",
+    "edc"
+  ],
+  "analyze": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "babel-eslint": "^10.1.0",
+    "core-js": "^3.6.5",
+    "dynamic-import-polyfill": "^0.1.1",
+    "eslint": "^6.8.0",
+    "esm-date-input-polyfill": "^6.0.5",
+    "httpster": "^1.0.4",
+    "rollup": "^2.6.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-delete": "^1.2.0",
+    "rollup-plugin-terser": "^5.3.0"
+  },
+  "dependencies": {}
+}
