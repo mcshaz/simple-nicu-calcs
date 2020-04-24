@@ -45,6 +45,7 @@ const moduleConfig = [
       dynamicImportFunction: '__import__',
       sourcemap: true,
     },
+    preserveEntrySignatures: false,
     plugins: [
       ...getRollupBasePlugins({ targetEsModules: true }),
       del({ targets: 'docs/dist/*' })
