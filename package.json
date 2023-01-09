@@ -37,7 +37,7 @@
     "dynamic-import-polyfill": "^0.1.1",
     "eslint": "^6.8.0",
     "esm-date-input-polyfill": "^6.1.0",
-    "httpster": "^1.0.4",
+    "httpster": "^1.1.0",
     "rollup": "^2.7.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-delete": "^1.2.0",
